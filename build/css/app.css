@@ -1,0 +1,5 @@
+body {
+  background: pink;
+  border: 100px solid red;
+  display: flex;
+}
