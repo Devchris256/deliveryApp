@@ -1,0 +1,18 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.restaurants {
+    background: v.$greyLight;
+    padding-block: 3.125rem;
+
+    &__title {
+        text-align: center;
+        color: v.$secondary;
+    }
+
+    @include m.desktop { 
+        &__content {
+            @include m.grid(2, 2.5rem)
+        }
+    }
+}

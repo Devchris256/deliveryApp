@@ -670,4 +670,55 @@ h3 {
     grid-row-end: 3;
   }
 }
+
+.restaurants {
+  background: #eceeef;
+  padding-block: 3.125rem;
+}
+.restaurants__title {
+  text-align: center;
+  color: #455a64;
+}
+@media (min-width: 1024px) {
+  .restaurants__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+  }
+}
+
+.restaurant {
+  text-align: center;
+  padding-block: 2.5rem;
+  padding-inline: 1.25rem;
+  border-radius: 0.625rem;
+  background: #FFFFFF;
+  -webkit-margin-after: 0.625rem;
+          margin-block-end: 0.625rem;
+  box-shadow: 0px 0px 2.6rem -0.8rem #99a4a9;
+}
+.restaurant__img {
+  max-inline-size: 12.5rem;
+  margin: 0 auto;
+  -webkit-margin-after: 1.25rem;
+          margin-block-end: 1.25rem;
+}
+.restaurant__name {
+  color: #e8505b;
+  font-size: 1.5rem;
+  margin-block: 0.625rem;
+}
+.restaurant__description {
+  margin-block: 0.25rem;
+  line-height: 1.7;
+  color: #455a64;
+}
+@media (min-width: 768px) {
+  .restaurant__flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.25rem;
+  }
+}
 /*# sourceMappingURL=app.css.map */
