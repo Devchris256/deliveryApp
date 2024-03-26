@@ -1,0 +1,28 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.header {
+    padding-block: 3.125rem;
+    
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__logo {
+        inline-size: 18.75rem;
+        margin-block-end: 3.125rem;
+    }
+
+    @include m.desktop { 
+        &__content {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        
+        &__logo {
+            margin-block-end: 0;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    inline-size: 100%;
+
+    &__link {
+        font-weight: 700;
+        font-size: 1.25rem;
+        color: v.$black;
+
+        &--registrar {
+            @include m.button(v.$primary, v.$white);
+            box-sizing: border-box;
+        }
+    }
+
+
+    @include m.desktop { 
+        flex-direction: row;
+        inline-size: auto;
+    }
+}
