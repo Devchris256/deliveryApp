@@ -49,3 +49,10 @@
     grid-template-columns: repeat($columnas, 1fr);
     gap: $espaciado;
 }
+
+@mixin gridposition ($column-start, $column-end, $row-star, $row-end){
+    grid-column-start: $column-start;
+    grid-column-end: $column-end;
+    grid-row-start: $row-star;
+    grid-row-end: $row-end;
+}

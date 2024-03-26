@@ -1,0 +1,27 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+
+.steps {
+    margin-block-start: 3.125rem;
+
+    &__title {
+        color: v.$white;
+        text-align: center;
+        &-span {
+            display: block;
+            font-size: 1.125rem;
+        }
+    }
+
+    &__content {
+        background: v.$primary;
+    }
+
+    @include m.tablet { 
+        &__grid {
+            @include m.grid(3, 3.125rem)
+        }
+    }
+
+}
