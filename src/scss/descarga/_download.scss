@@ -1,0 +1,35 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.download {
+    padding-block: 3.125rem;
+    background: v.$greyLight;
+
+    &__content {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    &__image {
+        inline-size: 50%;
+        margin: 3.125rem auto 0 auto;
+        transition: scale .3s, transform .3s;
+
+        &:hover {
+            scale: 1.1;
+            transform: rotate(5deg);
+        }
+    }
+
+    @include m.tablet {
+        &__content {
+            @include m.grid(2, 3.125rem);
+            align-items: center;
+        }
+
+        &__image {
+            margin-block-start: 0;
+        }
+    }
+
+}

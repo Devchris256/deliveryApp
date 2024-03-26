@@ -778,4 +778,56 @@ h3 {
     flex: 1;
   }
 }
+
+.download {
+  padding-block: 3.125rem;
+  background: #eceeef;
+}
+.download__content {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.download__image {
+  inline-size: 50%;
+  margin: 3.125rem auto 0 auto;
+  transition: scale 0.3s, -webkit-transform 0.3s;
+  transition: scale 0.3s, transform 0.3s;
+  transition: scale 0.3s, transform 0.3s, -webkit-transform 0.3s;
+}
+.download__image:hover {
+  scale: 1.1;
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
+}
+@media (min-width: 768px) {
+  .download__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.125rem;
+    align-items: center;
+  }
+  .download__image {
+    -webkit-margin-before: 0;
+            margin-block-start: 0;
+  }
+}
+
+.store {
+  text-align: center;
+}
+.store__title {
+  color: #455a64;
+  margin: 0;
+}
+.store__text {
+  margin: 1.25rem 0 1.875rem 0;
+}
+.store__options {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+.store__img {
+  inline-size: 100%;
+}
 /*# sourceMappingURL=app.css.map */

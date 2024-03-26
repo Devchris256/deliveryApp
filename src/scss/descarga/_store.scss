@@ -1,0 +1,25 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m; 
+
+.store {
+    text-align: center;
+    &__title {
+        color: v.$secondary;
+        margin: 0;
+    }
+
+    &__text {
+        margin: 1.25rem 0 1.875rem 0;
+    }
+
+    &__options {
+        display: flex;
+        align-items: center;
+        gap: 1.25rem;
+    }
+
+    &__img {
+        inline-size: 100%;
+    }
+
+}
