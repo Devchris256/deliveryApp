@@ -1,0 +1,74 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.form {
+    &__content {
+        background: v.$primary;
+        padding: 3.125rem 1.25rem;
+
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: space-evenly;
+    }
+
+    &__title {
+        text-align: center;
+        color: v.$white;
+    }
+
+    &__label {
+        display: block;
+        text-transform: uppercase;
+        color: v.$white;
+        margin-block: .625rem;
+    }
+
+    &__input {
+        padding: 1rem .5rem;
+        inline-size: 100%;
+        box-sizing: border-box;
+        border: none;
+    }
+
+    &__submit {
+        @include m.button(v.$secondary, v.$white);
+        margin-block-start: 1.24rem;
+    }
+
+    &__img {
+        margin-block-start: 3.125rem;
+    }
+
+    &__image {
+        inline-size: 18.75rem;
+    }
+
+    @include m.tablet {
+        &__grid {
+            @include m.grid(2, 1.25rem);
+            gap: 3.125rem;
+        }
+
+        &__content {
+            padding: 3.125rem;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        
+        &__submit {
+            inline-size: 100%;
+        }
+
+        &__img {
+            display: flex;
+            justify-content: center;
+        }
+
+        &__image {
+            inline-size: 100%;
+        }
+    }
+
+}
