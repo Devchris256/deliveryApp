@@ -522,6 +522,16 @@ h3 {
 .steps__content {
   background: #e8505b;
 }
+.steps__step {
+  transition: scale 0.3s, -webkit-transform 0.3s;
+  transition: scale 0.3s, transform 0.3s;
+  transition: scale 0.3s, transform 0.3s, -webkit-transform 0.3s;
+}
+.steps__step:focus, .steps__step:hover {
+  scale: 1.1;
+  -webkit-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+}
 @media (min-width: 768px) {
   .steps__grid {
     display: grid;

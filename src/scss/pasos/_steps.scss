@@ -18,6 +18,16 @@
         background: v.$primary;
     }
 
+    &__step {
+        transition: scale .3s, transform .3s;
+        
+        &:focus, 
+        &:hover {
+            scale: 1.1;
+            transform: rotate(-5deg);
+        }
+    }
+
     @include m.tablet { 
         &__grid {
             @include m.grid(3, 3.125rem)
