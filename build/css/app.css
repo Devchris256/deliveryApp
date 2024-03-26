@@ -731,4 +731,51 @@ h3 {
     gap: 1.25rem;
   }
 }
+
+.distributors {
+  padding-block: 3.125rem;
+}
+.distributors__title {
+  color: #455a64;
+  text-align: center;
+}
+.distributors__text {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: #455a64;
+  margin-block: 1.25rem;
+}
+.distributors__button {
+  background-color: #e8505b;
+  font-size: 1.25rem;
+  padding: 0.75rem 1.875rem;
+  border-radius: 0.625rem;
+  font-weight: 700;
+  display: block;
+  inline-size: 100%;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  border: none;
+  box-sizing: border-box;
+}
+.distributors__button:hover {
+  cursor: pointer;
+  background-color: #e22331;
+}
+@media (min-width: 768px) {
+  .distributors__button {
+    width: auto;
+  }
+}
+@media (min-width: 768px) {
+  .distributors__flex {
+    display: flex;
+    gap: 2.5rem;
+  }
+  .distributors__flex > * {
+    flex: 1;
+  }
+}
 /*# sourceMappingURL=app.css.map */

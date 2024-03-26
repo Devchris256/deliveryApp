@@ -1,0 +1,39 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+
+.distributors {
+
+    padding-block: 3.125rem;
+
+    &__title {
+        color: v.$secondary;
+        text-align: center;
+    }
+
+    &__text {
+        font-size: 1.25rem;
+        line-height: 1.5;
+        color: v.$secondary;
+        margin-block: 1.25rem;
+    }
+
+    &__button {
+        @include m.button(v.$primary, v.$white);
+        box-sizing: border-box;
+    }
+
+    @include m.tablet { 
+        &__flex {
+            display: flex;
+            gap: 2.5rem;
+
+
+            &>* {
+                flex: 1;
+            }
+        }
+
+
+    }
+}
