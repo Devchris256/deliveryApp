@@ -36,6 +36,9 @@
     }
 
     &__img {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
         margin-block-start: 3.125rem;
     }
 
@@ -62,8 +65,8 @@
         }
 
         &__img {
-            display: flex;
-            justify-content: center;
+            margin-block-start: 0;
+            inline-size: 100%;
         }
 
         &__image {

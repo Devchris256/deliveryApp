@@ -312,6 +312,7 @@ template {
 html {
   font-size: 16px;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -476,6 +477,9 @@ h3 {
   }
 }
 .form__img {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
   -webkit-margin-before: 3.125rem;
           margin-block-start: 3.125rem;
 }
@@ -499,8 +503,9 @@ h3 {
     inline-size: 100%;
   }
   .form__img {
-    display: flex;
-    justify-content: center;
+    -webkit-margin-before: 0;
+            margin-block-start: 0;
+    inline-size: 100%;
   }
   .form__image {
     inline-size: 100%;
@@ -829,5 +834,88 @@ h3 {
 }
 .store__img {
   inline-size: 100%;
+}
+
+.footer {
+  -webkit-padding-before: 3.125rem;
+          padding-block-start: 3.125rem;
+  background: #455a64;
+  color: #FFFFFF;
+  text-align: center;
+}
+.footer__widget {
+  -webkit-margin-after: 3.125rem;
+          margin-block-end: 3.125rem;
+}
+.footer__widget:nth-last-child(1) {
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+}
+.footer__title {
+  margin: 0;
+}
+.footer__text {
+  margin-block: 1.25rem;
+  color: #FFFFFF;
+  line-height: 1.8;
+}
+.footer__navigation {
+  margin-block: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.footer__link {
+  color: #FFFFFF;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+.footer__button {
+  background-color: #e8505b;
+  font-size: 1.25rem;
+  padding: 0.75rem 1.875rem;
+  border-radius: 0.625rem;
+  font-weight: 700;
+  display: block;
+  inline-size: 100%;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  border: none;
+  box-sizing: border-box;
+  -webkit-margin-after: 1.25rem;
+          margin-block-end: 1.25rem;
+}
+.footer__button:hover {
+  cursor: pointer;
+  background-color: #e22331;
+}
+@media (min-width: 768px) {
+  .footer__button {
+    width: auto;
+  }
+}
+.footer__copyright {
+  background: #e8505b;
+  color: #FFFFFF;
+  padding: 1.25rem;
+  text-align: center;
+  margin: 0;
+}
+@media (min-width: 768px) {
+  .footer {
+    text-align: start;
+  }
+  .footer__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+}
+@media (min-width: 1024px) {
+  .footer__content {
+    gap: 2rem;
+  }
 }
 /*# sourceMappingURL=app.css.map */

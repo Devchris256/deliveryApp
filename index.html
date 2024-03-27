@@ -3,11 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ordena comida deliciosa con entrega rápida a domicilio. Amplia selección de platos para satisfacer todos los gustos. ¡Haz tu pedido ahora">
+    <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./build/css/app.css">
-    <title>DeliveryApp</title>
+    <title>App Comida</title>
 </head>
 <body>
     <header class="header">
@@ -24,30 +42,30 @@
             </div> <!-- header content -->
         </div> <!-- wrapper --> 
     </header>
-    <section class="form">
+    <section class="form" id="formulario">
         <div class="wrapper">
             <div class="form__grid">
                 <div class="form__content">
                     <h2 class="form__title">Encuentra y pide comida de tu restaurante favorito</h2>
                     <div class="form__campo">
                         <label for="restaurant" class="form__label">Restaurant</label>
-                        <input class="form__input" type="text" id="restaurant" placeholder="Tacos México">
+                        <input class="form__input" type="text" id="restaurant" placeholder="Tacos México" aria-label="Buscar restaurant">
                     </div> <!-- form campo -->
                     <div class="form__campo">
                         <label for="platillo" class="form__label">Platillo</label>
-                        <input class="form__input" type="text" id="platillo" placeholder="Pizza, Ensalada, Hamburguesa">
+                        <input class="form__input" type="text" id="platillo" placeholder="Pizza, Ensalada, Hamburguesa" aria-label="Buscar platillo">
                     </div> <!-- form campo -->
                     <div class="form__campo">
                         <input type="button" value="Buscar" class="form__submit">                            
                     </div>
                 </div> <!-- form content -->
                 <div class="form__img">
-                    <img src="./build/img/dibujo_repartidor.svg" alt="" class="form__image">
+                    <img src="./build/img/dibujo_repartidor.svg" alt="Ilustracion de un repartidor en moto" class="form__image">
                 </div>
             </div> <!-- form grid -->
         </div> <!-- wrapper -->
     </section> <!-- form -->
-    <section class="steps">
+    <section class="steps" id="pasos">
         <img src="./build/img/wave.svg" alt="Olas de svg en color rojo">
         <div class="steps__content">
             <div class="wrapper">
@@ -78,7 +96,7 @@
             </div> <!-- wrapper -->
         </div>  <!-- steps content -->
     </section> <!-- steps -->
-    <section class="testimonials">
+    <section class="testimonials" id="testimonios">
         <div class="wrapper">
             <div class="testimonials__content">
                 <h2 class="testimonials__title">Testimoniales</h2>
@@ -197,7 +215,7 @@
             </div> <!-- testimonials content -->
         </div> <!-- wrapper -->
     </section> <!-- testimonials -->
-    <main class="main">
+    <main class="main" id="restaurantes">
         <section class="restaurants">
             <h2 class="restaurants__title">Restaurantes Favoritos</h2>
             <div class="wrapper">
@@ -406,7 +424,7 @@
             </div> <!-- wrapper -->
         </section> <!-- restaurants -->
     </main>
-    <section class="distributors">
+    <section class="distributors" id="oferta">
         <div class="wrapper">
             <h2 class="distributors__title">Gana dinero con AppComida</h2>
             <div class="distributors__content">
@@ -429,7 +447,7 @@
             </div>
         </div>
     </section>
-    <section class="download">
+    <section class="download" id="descarga">
         <div class="wrapper">
             <div class="download__content">
                 <div class="download__image">
@@ -443,10 +461,10 @@
                     <h3 class="store__title">Descarga la App</h3>
                     <p class="store__text">Disponible para Android y iOS</p>
                     <div class="store__options">
-                        <a href="https://www.apple.com/la/app-store/" target="_blank" class="store__img">
-                            <img src="./build/img/tienda-android.svg" alt="Tienda App Store">
+                        <a href="https://play.google.com/store/games?hl=es_PE&gl=US&pli=1" title="Enlace a Google Play" target="_blank" class="store__img">
+                            <img src="./build/img/tienda-android.svg" alt="Tienda google play">
                         </a>
-                        <a href="https://play.google.com/store/games?hl=es_PE&gl=US&pli=1" target="_blank" class="store__img">
+                        <a href="https://www.apple.com/la/app-store/" title="Enlace a App store" target="_blank" class="store__img">
                             <img src="./build/img/tienda-apple.svg" alt="Tienda Google Play">
                         </a>
                     </div> <!-- store option -->
@@ -454,5 +472,44 @@
             </div>
         </div>
     </section>
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer__content">
+                <div class="footer__widget">
+                    <h3 class="footer__title">
+                        Nosotros
+                    </h3>
+                    <p class="footer__text">
+                        AppComida es una plataforma en línea que conecta a usuarios con una amplia variedad de restaurantes y opciones gastronómicas en su área local. Ofrece una interfaz intuitiva y fácil de usar, donde los usuarios pueden explorar menús, realizar pedidos y programar entregas a domicilio o recoger en el restaurante. 
+                    </p>
+                </div> <!-- footer widget -->
+                <div class="footer__widget">
+                    <h3 class="footer__title">
+                        Navegacion
+                    </h3>
+                    <nav class="footer__navigation">
+                        <a href="#formulario" class="footer__link">Formulario</a>
+                        <a href="#pasos" class="footer__link">Pasos para pedir</a>
+                        <a href="#testimonios" class="footer__link">Testimonios</a>
+                        <a href="#restaurantes" class="footer__link">Restaurantes</a>
+                        <a href="#oferta" class="footer__link">Oferta laboral</a>
+                        <a href="#descarga" class="footer__link">Descarga la App</a>
+                    </nav>
+                </div> <!-- footer widget -->
+                <div class="footer__widget">
+                    <h3 class="footer__title">
+                        Contacto
+                    </h3>
+                    <p class="footer__text">
+                        Tu enlace rápido para pedir comida y para que los restaurantes se conecten con nuevos clientes. Ordena fácilmente y entrega rápido.
+                    </p>
+                    <a href="https://wa.me/922054874" target="_blank" class="footer__button">Enviar Whatsapp</a>
+                </div> <!-- footer widget -->
+            </div>
+        </div>
+        <p class="footer__copyright">
+            App Comida. Todos los derechos Reservados
+        </p>
+    </footer>
 </body>
 </html>
